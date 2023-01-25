@@ -8,11 +8,9 @@ namespace tictaktoe2
         {
 
             int turn = 0;
-            string playerOne = "";
-            string playerTwo = "";
             bool win = false;
             int position;
-            string[] board = new string[9];
+            string[] board = { "1", "2", "3", "4", "5", "6" , "7", "8", "9"};
 
             Console.WriteLine("Welcome to Tic-Tac-Toe!");
 
@@ -21,16 +19,16 @@ namespace tictaktoe2
                 if (turn == 0)
                 {
                     Console.WriteLine("Player one choose a position");
-                    playerOne = Console.ReadLine();
+                    Game.PrintBoard(board);
 
-                    // choice = int.Parse(Console.ReadLine());
-                    for (int i = 0; i < board.Length; i++)
-                    {
+                    position = int.Parse(Console.ReadLine());
+                    //for (int i = 0; i < board.Length; i++)
+                    //{
                         position = int.Parse(Console.ReadLine());
 
-                        if (board[position] != "X" && board[position] != "O")
+                        if (board[position - 1] != "X" && board[position - 1] != "O")
                         {
-                            board[position] = "X";
+                            board[position - 1] = "X";
                             //i++;
                         }
                         else
@@ -39,21 +37,21 @@ namespace tictaktoe2
                         }
 
                         turn = (turn + 1) % 2;
-                    }
+                    //}
                 }
                 else
                 {
                     Console.WriteLine("Player two choose a position");
-                    playerOne = Console.ReadLine();
+                    Game.PrintBoard(board);
 
-                    // choice = int.Parse(Console.ReadLine());
-                    for (int i = 0; i < board.Length; i++)
-                    {
+                    position = int.Parse(Console.ReadLine());
+                    //for (int i = 0; i < board.Length; i++)
+                    //{
                         position = int.Parse(Console.ReadLine());
 
-                        if (board[position] != "X" && board[position] != "O")
+                        if (board[position - 1] != "X" && board[position - 1] != "O")
                         {
-                            board[position] = "O";
+                            board[position - 1] = "O";
                             //i++;
                         }
                         else
@@ -62,7 +60,7 @@ namespace tictaktoe2
                         }
 
                         turn = (turn + 1) % 2;
-                    }
+                   // }
                 }
             }
         string[] myArray = { "o", "p", "o", "q", "o", "e" , "r", "t", "o"};
