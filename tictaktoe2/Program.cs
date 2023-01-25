@@ -22,22 +22,18 @@ namespace tictaktoe2
                     Game.PrintBoard(board);
 
                     position = int.Parse(Console.ReadLine());
-                    //for (int i = 0; i < board.Length; i++)
-                    //{
-                        position = int.Parse(Console.ReadLine());
 
-                        if (board[position - 1] != "X" && board[position - 1] != "O")
-                        {
-                            board[position - 1] = "X";
-                            //i++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("That spot is already taken. Please choose an open spot.");
-                        }
+                    if (board[position - 1] != "X" && board[position - 1] != "O")
+                    {
+                        board[position - 1] = "X";
+                    }
+                    else
+                    {
+                        Console.WriteLine("That spot is already taken. Please choose an open spot.");
+                    }
 
-                        turn = (turn + 1) % 2;
-                    //}
+                    turn = (turn + 1) % 2;
+
                 }
                 else
                 {
@@ -45,29 +41,19 @@ namespace tictaktoe2
                     Game.PrintBoard(board);
 
                     position = int.Parse(Console.ReadLine());
-                    //for (int i = 0; i < board.Length; i++)
-                    //{
-                        position = int.Parse(Console.ReadLine());
 
-                        if (board[position - 1] != "X" && board[position - 1] != "O")
-                        {
-                            board[position - 1] = "O";
-                            //i++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("That spot is already taken. Please choose an open spot.");
-                        }
+                    if (board[position - 1] != "X" && board[position - 1] != "O")
+                    {
+                        board[position - 1] = "O";
+                    }
+                    else
+                    {
+                        Console.WriteLine("That spot is already taken. Please choose an open spot.");
+                    }
 
-                        turn = (turn + 1) % 2;
-                   // }
+                    turn = (turn + 1) % 2;
                 }
             }
-        string[] myArray = { "o", "p", "o", "q", "o", "e" , "r", "t", "o"};
-        //Game newGame = new Game();
-        //newGame.WinGame(myArray);
-        Game.WinGame(myArray);
-        Game.PrintBoard(myArray);
         }
     }
 }
