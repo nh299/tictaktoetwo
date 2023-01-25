@@ -53,7 +53,7 @@ namespace tictaktoe2
 
                         if (board[position] != "X" && board[position] != "O")
                         {
-                            board[position] = "X";
+                            board[position] = "O";
                             i++;
                         }
                         else
