@@ -58,13 +58,13 @@ namespace tictaktoe2
             public static void PrintBoard(string[] board) {
                 for (int i = 0;i < board.Length;i++)
                     {
-                    if (i == 2 || i == 5)
+                    if (i == 2 || i == 5 || i == 8)
                     {
                         Console.Write(board[i] + "\n");
                     }
                     else
                     {
-                        Console.Write(board[i]);
+                        Console.Write(board[i] + "|");
                     }
                     }
             }
