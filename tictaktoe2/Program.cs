@@ -6,7 +6,7 @@ namespace tictaktoe2
     {
         public static void Main(string[] args)
         {
-            string[] myArray = { "o", "p", "o", "q", "o", "e" , "r", "t", "o"};
+            string[] myArray = { "1", "2", "3", "4", "5", "6" , "7", "8", "9"};
             //Game newGame = new Game();
             //newGame.WinGame(myArray);
             Game.WinGame(myArray);

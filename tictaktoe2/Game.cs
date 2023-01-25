@@ -12,42 +12,42 @@ namespace tictaktoe2
                 bool win = false;
                 string winnerChar = "";
 
-                if ((board[0] == board[1] && board[1] == board[2]) && (board[0] != " "))
+                if ((board[0] == board[1] && board[1] == board[2]))
                 {
                     win = true;
                     winnerChar = board[0];
                 }
-                else if ((board[3] == board[4] && board[4] == board[5]) && (board[3] != " "))
+                else if ((board[3] == board[4] && board[4] == board[5]))
                 {
                     win = true;
                     winnerChar = board[3];
                 }
-                else if ((board[0] == board[3] && board[3] == board[6]) && (board[0] != " "))
+                else if ((board[0] == board[3] && board[3] == board[6]))
                 {
                     win = true;
                     winnerChar = board[0];
                 }
-                else if ((board[6] == board[7] && board[7] == board[8]) && (board[6] != " "))
+                else if ((board[6] == board[7] && board[7] == board[8]))
                 {
                     win = true;
                     winnerChar = board[6];
                 }
-                else if ((board[1] == board[4] && board[4] == board[7]) && (board[1] != " "))
+                else if ((board[1] == board[4] && board[4] == board[7]))
                 {
                     win = true;
                     winnerChar = board[1];
                 }
-                else if ((board[2] == board[5] && board[5] == board[8]) && (board[2] != " "))
+                else if ((board[2] == board[5] && board[5] == board[8]))
                 {
                     win = true;
                     winnerChar = board[2];
                 }
-                else if ((board[0] == board[4] && board[4] == board[8]) && (board[0] != " "))
+                else if ((board[0] == board[4] && board[4] == board[8]))
                 {
                     win = true;
                     winnerChar = board[0];
                 }
-                else if ((board[2] == board[4] && board[4] == board[8]) && (board[2] != " "))
+                else if ((board[2] == board[4] && board[4] == board[8]))
                 {
                     win = true;
                     winnerChar = board[2];
