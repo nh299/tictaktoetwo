@@ -7,7 +7,7 @@ namespace tictaktoe2
 
         public static class Game
         {
-            public static void WinGame(string[] board)
+            public static string WinGame(string[] board)
             {
                 bool win = false;
                 string winnerChar = "";
@@ -54,7 +54,11 @@ namespace tictaktoe2
                 }
                 if (win == true)
                 {
-                    Console.Write(winnerChar + " is the winner!\n");
+                    return winnerChar + " is the winner!\n";
+                }
+                else
+                {
+                    return "";
                 }
             }
             public static void PrintBoard(string[] board)

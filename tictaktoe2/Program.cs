@@ -53,7 +53,19 @@ namespace tictaktoe2
 
                     turn = (turn + 1) % 2;
                 }
+                string output = Game.WinGame(board);
+                if (output == "")
+                {
+                    win = false;
+                }
+                else
+                {
+                    win = true;
+                    Game.PrintBoard(board);
+                    Console.WriteLine(output);
+                }
             }
+           
         }
     }
 }
